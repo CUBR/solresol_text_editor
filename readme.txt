@@ -33,4 +33,4 @@ this is the first version and i have bug tested it but there are probably still 
 please tell me if there is any unexpected beheaviour that is not outlined in this readme.
 also please suggest features you want for the next version,
 there will be updates to this but also the functionallity will grow by adding more stenographs
-contact me through the coding channel of the la lasiresa discord server
+contact me through the coding channel of the la lasiresa discord server or posting an issue on github
