@@ -49,3 +49,6 @@ to
 "do": "d"
 
 don't add any new things, only change the right column
+
+There is also now word wrap, so word's won't go off the right side anymore,
+when a word is broken into characters it can half go to the next line
