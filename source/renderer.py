@@ -26,6 +26,9 @@ class renderer:
 
         self.scale = 0.5
 
+        self.cursorpos = 0
+        self.cursorimg = pygame.image.load("ui_assets/cursor.png")
+
     def process_input(self, keypress):
         # print(keypress)
         if keypress != "":
@@ -41,11 +44,11 @@ class renderer:
                 if lastword in controlchars:
                     self.mainarray.append(keypress)
 
-                elif len(lastword) == 4:
+                elif len(lastword) == wordlengthlimit:
                     self.mainarray.append("S")
                     self.mainarray.append(keypress)
 
-                elif len(lastword) < 4:
+                elif len(lastword) < wordlengthlimit:
                     self.mainarray[-1] += keypress
 
             elif keypress == "P":
@@ -116,6 +119,10 @@ class renderer:
                     character = pygame.transform.scale(character,
                                                        (int(self.scale*character.get_width()),
                                                         int(self.scale*character.get_height())))
+
+                    if xpos + character.get_width() > self.screen.get_width():
+                        ypos += (height + 5)
+                        xpos = 5
 
                     self.screen.blit(character, (xpos, ypos))
                     xpos += (character.get_width() + 5)

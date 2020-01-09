@@ -6,6 +6,7 @@
 
 import pygame
 import constants as c
+import json
 
 class input_processor:
     def __init__(self):
@@ -25,3 +26,12 @@ class input_processor:
 
     def getcharacter(self):
         return self.character
+
+def load_config(filname):
+    data = json.load(open(filname))
+
+    for key in c.allinputs:
+        keycode = c.pygame_key_map[data[key]]
+        value = c.inputmap[key]
+        del c.inputmap[key]
+        c.inputmap[keycode] = value

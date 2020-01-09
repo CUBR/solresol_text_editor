@@ -40,6 +40,7 @@ running = True
 
 RENDERER = renderer(screen)
 InputProcessor = input_processor()
+load_config("key_config.json")
 
 while running:
     clock.tick(FPS)
