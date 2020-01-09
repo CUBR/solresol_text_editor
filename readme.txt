@@ -34,3 +34,18 @@ please tell me if there is any unexpected beheaviour that is not outlined in thi
 also please suggest features you want for the next version,
 there will be updates to this but also the functionallity will grow by adding more stenographs
 contact me through the coding channel of the la lasiresa discord server or posting an issue on github
+
+V0.2
+The word limit has been increased to 5 so 5 note words are now possible,
+they get broken up though because the stenographs don't exist
+
+there is now key_config.json, all the pygame keys are suported and you can look at the list here https://www.pygame.org/docs/ref/key.html
+only change the things in the right of each entry, use the names from the description column on the website
+
+so if you wanted do to be on the d key, it would go from
+"do": "1"
+
+to
+"do": "d"
+
+don't add any new things, only change the right column
