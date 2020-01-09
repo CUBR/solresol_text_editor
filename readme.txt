@@ -35,7 +35,7 @@ also please suggest features you want for the next version,
 there will be updates to this but also the functionallity will grow by adding more stenographs
 contact me through the coding channel of the la lasiresa discord server or posting an issue on github
 
-V0.2
+V0.2 09/01/2020
 The word limit has been increased to 5 so 5 note words are now possible,
 they get broken up though because the stenographs don't exist
 
